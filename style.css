@@ -1,0 +1,181 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    padding: 10px 15px;
+    color: white;
+}
+
+.back-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.page-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Rubrique de contact */
+.contact-section, .form-container {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 500px; /* Contrainte de largeur maximale */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box {
+    margin-top: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f7f9fc;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: red;
+}
+
+/* Styles pour les boutons radio verrouillés */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.radio-group input {
+    margin-right: 10px;
+}
+
+.radio-group i {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Bouton de soumission */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .back-icon {
+        margin: 0;
+    }
+
+    /* Redimensionner les conteneurs */
+    .contact-section, .form-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* Ajustement de la taille des boutons radio et labels */
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .radio-group label {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Bouton responsive */
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 8px;
+    }
+
+    .page-title {
+        font-size: 14px;
+    }
+
+    /* Réduire les marges pour petits écrans */
+    .contact-section, .form-container {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    /* Boutons plus petits */
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Les éléments deviennent verticaux pour plus de clarté */
+    .radio-group {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+}
